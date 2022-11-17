@@ -1,11 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export type Props = {
-    size: 'small' | 'large';
-}
+  size: "small" | "large";
+};
 
-const Texto = styled.p<Props>`
-    font-size: ${({size}) => size == 'small' ? 8 : 16}px;
+const Texto = styled.p`
+  color: ${(theme) => theme.theme.success.main.value};
+  font-size: ${(theme) => theme.theme.fontSizes.xxl.value}px;
 `;
 
 export default Texto;

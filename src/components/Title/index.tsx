@@ -1,17 +1,9 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import Texto,{ Props } from './style';
+import Texto from "./style";
 
-
-function Title({size}:Props) {
-
-return (
-    <Texto size={size} />
-)
-
-};
+function Title() {
+  return <Texto>Angelo o brabo</Texto>;
+}
 
 export default Title;
-
-
-//Criar uma tag P, criar uma propriedade pro componente que recebe os valores small, etc. 
