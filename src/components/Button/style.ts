@@ -1,13 +1,31 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Colors } from "../../utils/styled";
 
-export const Wrapper = styled.button<ButtonProps>`
-  background-color: ${({ variant, theme }) =>
-    !!variant ? Colors[variant] : theme.brand.primary.main.value};
-
-  ${({ variant }) =>
-    variant === "tertiary" &&
-    css`
-      border: 1px solid red;
-    `}
+const BtnBase = styled.div`
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  a:hover {
+    text-decoration: none;
+  }
 `;
+
+const BtnPrimary = styled.div`
+  background-color: ${Colors.primary};
+  color: white;
+  a:hover  {
+      background-color: ${Colors.secondary};
+  }
+`;
+
+const BtnSecondary = styled.div`
+  background-color: ${Colors.secondary};
+  color: primary;
+  a:hover  {
+      background-color: Secondary-Dark;
+  }
+`;
+
+export { BtnBase, BtnPrimary, BtnSecondary };

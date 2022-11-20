@@ -1,8 +1,14 @@
 import React from "react";
-import { Wrapper } from "./style";
+import styled from "styled-components";
+import { BtnBase,BtnPrimary,BtnSecondary } from "./style";
+
+declare type ButtonProps = { variant?: "primary" | "secondary" | "tertiary" };
+
 
 function Button({ variant }: ButtonProps) {
-  return <Wrapper variant={variant}>Botao</Wrapper>;
+  return(
+    <Button type={variant} />
+  )
 }
 
 export default Button;
