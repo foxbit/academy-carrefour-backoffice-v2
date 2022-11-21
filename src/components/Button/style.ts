@@ -16,15 +16,15 @@ const BtnPrimary = styled.div`
   background-color: ${Colors.primary};
   color: white;
   a:hover  {
-      background-color: ${Colors.secondary};
+      background-color: ${Colors.primaryDark};
   }
 `;
 
 const BtnSecondary = styled.div`
   background-color: ${Colors.secondary};
-  color: primary;
+  color: white;
   a:hover  {
-      background-color: Secondary-Dark;
+      background-color: ${Colors.secondaryDark};
   }
 `;
 
